@@ -7,7 +7,8 @@
     flex-direction: column;
   }
   .team-img-container,
-  .fact-container{
+  .fact-container,
+  .sponsor-companies{
     grid-template-columns: repeat(1, 1fr);
   }
   .our-feature{
@@ -18,6 +19,10 @@
     justify-items: center;
     gap: 24px;
   }
+  .sponsor-companies{
+    justify-items: center;
+    gap: 50px;
+  }
 }
 
 /* medium size device */
@@ -27,5 +32,12 @@
   }
   .our-feature{
     margin: 50px auto;
+  }
+
+  .sponsor-companies,
+  .fact-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
   }
 }
